@@ -5,6 +5,7 @@ const colors = [
     "rgb(254,153,135)",
     "rgb(141,182,238)",
     "rgb(181,147,242)",
+    "rgb(104,219,162)",
     "rgb(244,191,27)",
 ]
 colors.forEach(color => {
