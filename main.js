@@ -17,6 +17,7 @@ colors.forEach(color => {
 
 const setColor = color => {
     S('.tag').style.background = color
+    S('body').style.background = (color === "rgb(244,191,27)" ? "#222222" : color)
 }
 
 const setRender = str => {
