@@ -1,0 +1,229 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+
+    <title>Quadre Maker - 天外天工作室</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        *::selection {
+            color: #222222;
+            background: #eee;
+        }
+
+        html,
+        body {
+            background-color: #222222;
+            color: #636b6f;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            height: 100vh;
+            margin: 0;
+        }
+
+        a,
+        a:link,
+        a:active,
+        a:hover,
+        a:visited {
+            color: inherit;
+            transition: all .2s;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        input {
+            font-size: 30px;
+            padding: 20px;
+            border: none;
+            width: 200px;
+            background: transparent;
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .full-height {
+            height: 100vh;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .position-ref {
+            position: relative;
+        }
+
+        .content {
+            text-align: center;
+            margin: 10% 10%;
+        }
+
+        .title {
+            font-size: 36px;
+            padding: 20px;
+        }
+
+        .head {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer .clause {
+            font-size: 8px;
+            line-height: 1.9;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .main {
+            min-width: 300px;
+            background: #eee;
+            margin: 20px auto;
+            display: flex;
+            padding: 50px 20px;
+        }
+
+        .left {
+            height: 60px;
+            width: 60px;
+            padding: 10px;
+            border-radius: 30px;
+            background: #aaa;
+            margin-right: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .bottom {
+            position: relative;
+        }
+
+        .tag {
+            background: rgb(244,191,27);
+            padding: 0px 8px;
+            font-size: 15px;
+            border-radius: 3px;
+            color: white;
+            margin-right: 3px;
+            transition: all .2s;
+        }
+
+        .name {
+            font-size: 15px;
+        }
+
+        .pop {
+            color: #181818;
+            font-size: 22px;
+            background: white;
+            border-radius: 25px;
+            padding: 14px 20px;
+            margin-left: 3px;
+            z-index: 1;
+        }
+
+        .tail {
+            width: 34px;
+            position: absolute;
+            left: -6px;
+            top: 2px;
+        }
+
+        .palette {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto 30px;
+        }
+
+        .color {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .color:active {
+            transform: scale(1.2)
+        }
+
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="flex-center position-ref full-height">
+        <div class="content">
+            <img class="head" src="assets/head.svg"/>
+            <input type="text" placeholder="输入词汇..." onkeyup="setRender(this.value)">
+            <article class="main">
+                <div class="left">确实</div>
+                <div class="right">
+                    <div class="top">
+                        <div class="tag">确实</div>
+                        <div class="name">确实</div>
+                    </div>
+                    <div class="bottom">
+                        <svg class="tail" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 33"
+                            style="enable-background:new 0 0 50 33;" xml:space="preserve">
+                            <path fill="white" d="M31.5,12.9c-1-0.2-2.1-0.3-3.2-0.4C9.2,11.4,3,1.1,3,1.1C5.1,23,19.5,29.7,31.5,31.4V12.9z"/>
+                        </svg>
+                        <div class="pop">确实</div>
+                    </div>
+                </div>
+            </article>
+            <div class="palette">
+            </div>
+            <footer>
+                <div class="clause">
+                    Copyright ©
+                    <a href="https://coder.twtstudio.com">TWTSTUDIO</a>
+                </div>
+                <div class="clause">
+                    <a href="https://github.com/Cyphexl/quadre-maker/">Github Repo</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="textFit.js"></script>
+<script src="main.js"></script>
+
+</html>
