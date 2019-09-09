@@ -1,5 +1,7 @@
 # Quadre Maker
+
 A boring quadre meme generator.
+
 ![Preview](assets/showcase.png "Preview")
 
 ### Features
