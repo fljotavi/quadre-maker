@@ -20,11 +20,12 @@ const setColor = color => {
 }
 
 const setRender = str => {
-    const needChange = [".left", ".tag", ".name", ".pop"]
+    const needChange = [".left", ".tag", ".name"]
     if (str === '') str = "-"
     needChange.forEach(sel => {
-        S(sel).innerText = str
+        S(sel).innerText = str.substr(0,6)
     })
+    S(".pop").innerText = str
     textFit(document.getElementsByClassName('left'), {
         multiLine: true
     })
